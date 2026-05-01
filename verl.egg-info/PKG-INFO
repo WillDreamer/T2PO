@@ -1,0 +1,461 @@
+Metadata-Version: 2.4
+Name: verl
+Version: 0.5.0.dev0
+Summary: verl: Volcano Engine Reinforcement Learning for LLM
+Home-page: https://github.com/volcengine/verl
+Author: Bytedance - Seed - MLSys
+Author-email: zhangchi.usc1992@bytedance.com, gmsheng@connect.hku.hk
+License: 
+                                         Apache License
+                                   Version 2.0, January 2004
+                                http://www.apache.org/licenses/
+        
+           TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+        
+           1. Definitions.
+        
+              "License" shall mean the terms and conditions for use, reproduction,
+              and distribution as defined by Sections 1 through 9 of this document.
+        
+              "Licensor" shall mean the copyright owner or entity authorized by
+              the copyright owner that is granting the License.
+        
+              "Legal Entity" shall mean the union of the acting entity and all
+              other entities that control, are controlled by, or are under common
+              control with that entity. For the purposes of this definition,
+              "control" means (i) the power, direct or indirect, to cause the
+              direction or management of such entity, whether by contract or
+              otherwise, or (ii) ownership of fifty percent (50%) or more of the
+              outstanding shares, or (iii) beneficial ownership of such entity.
+        
+              "You" (or "Your") shall mean an individual or Legal Entity
+              exercising permissions granted by this License.
+        
+              "Source" form shall mean the preferred form for making modifications,
+              including but not limited to software source code, documentation
+              source, and configuration files.
+        
+              "Object" form shall mean any form resulting from mechanical
+              transformation or translation of a Source form, including but
+              not limited to compiled object code, generated documentation,
+              and conversions to other media types.
+        
+              "Work" shall mean the work of authorship, whether in Source or
+              Object form, made available under the License, as indicated by a
+              copyright notice that is included in or attached to the work
+              (an example is provided in the Appendix below).
+        
+              "Derivative Works" shall mean any work, whether in Source or Object
+              form, that is based on (or derived from) the Work and for which the
+              editorial revisions, annotations, elaborations, or other modifications
+              represent, as a whole, an original work of authorship. For the purposes
+              of this License, Derivative Works shall not include works that remain
+              separable from, or merely link (or bind by name) to the interfaces of,
+              the Work and Derivative Works thereof.
+        
+              "Contribution" shall mean any work of authorship, including
+              the original version of the Work and any modifications or additions
+              to that Work or Derivative Works thereof, that is intentionally
+              submitted to Licensor for inclusion in the Work by the copyright owner
+              or by an individual or Legal Entity authorized to submit on behalf of
+              the copyright owner. For the purposes of this definition, "submitted"
+              means any form of electronic, verbal, or written communication sent
+              to the Licensor or its representatives, including but not limited to
+              communication on electronic mailing lists, source code control systems,
+              and issue tracking systems that are managed by, or on behalf of, the
+              Licensor for the purpose of discussing and improving the Work, but
+              excluding communication that is conspicuously marked or otherwise
+              designated in writing by the copyright owner as "Not a Contribution."
+        
+              "Contributor" shall mean Licensor and any individual or Legal Entity
+              on behalf of whom a Contribution has been received by Licensor and
+              subsequently incorporated within the Work.
+        
+           2. Grant of Copyright License. Subject to the terms and conditions of
+              this License, each Contributor hereby grants to You a perpetual,
+              worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+              copyright license to reproduce, prepare Derivative Works of,
+              publicly display, publicly perform, sublicense, and distribute the
+              Work and such Derivative Works in Source or Object form.
+        
+           3. Grant of Patent License. Subject to the terms and conditions of
+              this License, each Contributor hereby grants to You a perpetual,
+              worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+              (except as stated in this section) patent license to make, have made,
+              use, offer to sell, sell, import, and otherwise transfer the Work,
+              where such license applies only to those patent claims licensable
+              by such Contributor that are necessarily infringed by their
+              Contribution(s) alone or by combination of their Contribution(s)
+              with the Work to which such Contribution(s) was submitted. If You
+              institute patent litigation against any entity (including a
+              cross-claim or counterclaim in a lawsuit) alleging that the Work
+              or a Contribution incorporated within the Work constitutes direct
+              or contributory patent infringement, then any patent licenses
+              granted to You under this License for that Work shall terminate
+              as of the date such litigation is filed.
+        
+           4. Redistribution. You may reproduce and distribute copies of the
+              Work or Derivative Works thereof in any medium, with or without
+              modifications, and in Source or Object form, provided that You
+              meet the following conditions:
+        
+              (a) You must give any other recipients of the Work or
+                  Derivative Works a copy of this License; and
+        
+              (b) You must cause any modified files to carry prominent notices
+                  stating that You changed the files; and
+        
+              (c) You must retain, in the Source form of any Derivative Works
+                  that You distribute, all copyright, patent, trademark, and
+                  attribution notices from the Source form of the Work,
+                  excluding those notices that do not pertain to any part of
+                  the Derivative Works; and
+        
+              (d) If the Work includes a "NOTICE" text file as part of its
+                  distribution, then any Derivative Works that You distribute must
+                  include a readable copy of the attribution notices contained
+                  within such NOTICE file, excluding those notices that do not
+                  pertain to any part of the Derivative Works, in at least one
+                  of the following places: within a NOTICE text file distributed
+                  as part of the Derivative Works; within the Source form or
+                  documentation, if provided along with the Derivative Works; or,
+                  within a display generated by the Derivative Works, if and
+                  wherever such third-party notices normally appear. The contents
+                  of the NOTICE file are for informational purposes only and
+                  do not modify the License. You may add Your own attribution
+                  notices within Derivative Works that You distribute, alongside
+                  or as an addendum to the NOTICE text from the Work, provided
+                  that such additional attribution notices cannot be construed
+                  as modifying the License.
+        
+              You may add Your own copyright statement to Your modifications and
+              may provide additional or different license terms and conditions
+              for use, reproduction, or distribution of Your modifications, or
+              for any such Derivative Works as a whole, provided Your use,
+              reproduction, and distribution of the Work otherwise complies with
+              the conditions stated in this License.
+        
+           5. Submission of Contributions. Unless You explicitly state otherwise,
+              any Contribution intentionally submitted for inclusion in the Work
+              by You to the Licensor shall be under the terms and conditions of
+              this License, without any additional terms or conditions.
+              Notwithstanding the above, nothing herein shall supersede or modify
+              the terms of any separate license agreement you may have executed
+              with Licensor regarding such Contributions.
+        
+           6. Trademarks. This License does not grant permission to use the trade
+              names, trademarks, service marks, or product names of the Licensor,
+              except as required for reasonable and customary use in describing the
+              origin of the Work and reproducing the content of the NOTICE file.
+        
+           7. Disclaimer of Warranty. Unless required by applicable law or
+              agreed to in writing, Licensor provides the Work (and each
+              Contributor provides its Contributions) on an "AS IS" BASIS,
+              WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+              implied, including, without limitation, any warranties or conditions
+              of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A
+              PARTICULAR PURPOSE. You are solely responsible for determining the
+              appropriateness of using or redistributing the Work and assume any
+              risks associated with Your exercise of permissions under this License.
+        
+           8. Limitation of Liability. In no event and under no legal theory,
+              whether in tort (including negligence), contract, or otherwise,
+              unless required by applicable law (such as deliberate and grossly
+              negligent acts) or agreed to in writing, shall any Contributor be
+              liable to You for damages, including any direct, indirect, special,
+              incidental, or consequential damages of any character arising as a
+              result of this License or out of the use or inability to use the
+              Work (including but not limited to damages for loss of goodwill,
+              work stoppage, computer failure or malfunction, or any and all
+              other commercial damages or losses), even if such Contributor
+              has been advised of the possibility of such damages.
+        
+           9. Accepting Warranty or Additional Liability. While redistributing
+              the Work or Derivative Works thereof, You may choose to offer,
+              and charge a fee for, acceptance of support, warranty, indemnity,
+              or other liability obligations and/or rights consistent with this
+              License. However, in accepting such obligations, You may act only
+              on Your own behalf and on Your sole responsibility, not on behalf
+              of any other Contributor, and only if You agree to indemnify,
+              defend, and hold each Contributor harmless for any liability
+              incurred by, or claims asserted against, such Contributor by reason
+              of your accepting any such warranty or additional liability.
+        
+           END OF TERMS AND CONDITIONS
+        
+           APPENDIX: How to apply the Apache License to your work.
+        
+              To apply the Apache License to your work, attach the following
+              boilerplate notice, with the fields enclosed by brackets "[]"
+              replaced with your own identifying information. (Don't include
+              the brackets!)  The text should be enclosed in the appropriate
+              comment syntax for the file format. We also recommend that a
+              file or class name and description of purpose be included on the
+              same "printed page" as the copyright notice for easier
+              identification within third-party archives.
+        
+           Copyright [yyyy] [name of copyright owner]
+        
+           Licensed under the Apache License, Version 2.0 (the "License");
+           you may not use this file except in compliance with the License.
+           You may obtain a copy of the License at
+        
+               http://www.apache.org/licenses/LICENSE-2.0
+        
+           Unless required by applicable law or agreed to in writing, software
+           distributed under the License is distributed on an "AS IS" BASIS,
+           WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+           See the License for the specific language governing permissions and
+           limitations under the License.
+        
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: accelerate
+Requires-Dist: codetiming
+Requires-Dist: datasets
+Requires-Dist: dill
+Requires-Dist: hydra-core
+Requires-Dist: numpy<2.0.0
+Requires-Dist: pandas
+Requires-Dist: peft
+Requires-Dist: pyarrow>=19.0.0
+Requires-Dist: pybind11
+Requires-Dist: pylatexenc
+Requires-Dist: ray[default]>=2.41.0
+Requires-Dist: torchdata
+Requires-Dist: tensordict!=0.9.0,<=0.9.1,>=0.8.0
+Requires-Dist: transformers<4.54.0
+Requires-Dist: wandb
+Requires-Dist: packaging>=20.0
+Requires-Dist: tensorboard
+Provides-Extra: test
+Requires-Dist: pytest; extra == "test"
+Requires-Dist: pre-commit; extra == "test"
+Requires-Dist: py-spy; extra == "test"
+Requires-Dist: pytest-asyncio; extra == "test"
+Provides-Extra: prime
+Requires-Dist: pyext; extra == "prime"
+Provides-Extra: geo
+Requires-Dist: mathruler; extra == "geo"
+Requires-Dist: torchvision; extra == "geo"
+Requires-Dist: qwen_vl_utils; extra == "geo"
+Provides-Extra: gpu
+Requires-Dist: liger-kernel; extra == "gpu"
+Requires-Dist: flash-attn; extra == "gpu"
+Provides-Extra: math
+Requires-Dist: math-verify; extra == "math"
+Provides-Extra: vllm
+Requires-Dist: tensordict!=0.9.0,<=0.9.1,>=0.8.0; extra == "vllm"
+Requires-Dist: vllm<=0.9.2,>=0.7.3; extra == "vllm"
+Provides-Extra: sglang
+Requires-Dist: tensordict!=0.9.0,<=0.9.1,>=0.8.0; extra == "sglang"
+Requires-Dist: flashinfer-python==0.2.9rc2; extra == "sglang"
+Requires-Dist: sglang[openai,srt]==0.4.10.post2; extra == "sglang"
+Requires-Dist: torch==2.7.1; extra == "sglang"
+Provides-Extra: trl
+Requires-Dist: trl<=0.9.6; extra == "trl"
+Provides-Extra: mcore
+Requires-Dist: mbridge; extra == "mcore"
+Dynamic: author
+Dynamic: author-email
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: provides-extra
+Dynamic: requires-dist
+
+<div align="center">
+ 👋 Hi, everyone! 
+    We will tell the world open-source agentic RL area is suffering!
+    <br>
+    <br>
+</div>
+
+
+<h1 style="text-align: center;"> 🤖 Agentic RL Arena </h1>
+
+
+<p align="center"><img src="public/ARL.png" width="800px" alt="Agentic RL Arena Framework" /></p>
+<p align="center" style="font-size: 16px; max-width: 800px; margin: 0 auto;">
+Figure 1: Overview of our framework
+</p>
+
+## Our Framework Design
+
+- Our benchmark profoundly analyzes the existing sufferings of Agentic RL, including tool-intergrated and multi-turn RL.
+- Our benchmark comprehensively compares existing Agentic RL algorithms and their breakthroughs.
+- Our benchmark universally provides experimental results and findings on multiple ARC tasks.
+
+### 🔥 Key Features
+
+- ✅ Support Training Multi-turn Math+Code Interpreter Agents
+- ✅ Support Training Multi-turn Embody Agents
+- ✅ Support Training Multi-turn Search Agents
+- ✅ Support Training Multi-turn Multi-modal Game Agents
+- ✅ Support Training Multi-turn Web Agents
+- ✅ Support Evaluating Commerical LLMs as Agents
+
+### 🔧 Upcoming Features and Changes
+
+- ➡️ Support Software Enginnering Agents
+
+### 📅 TODO
+
+- [ ] Cross-domain agentic reasoning
+- [ ] Multiple tool integration reasoning
+- [ ] Gap between $\pi_{\theta_{vLLM}}$ and $\pi_{\theta_{FSDP}}$
+- [ ] Turn-level rollout compactness
+- [ ] Rollout analysis
+
+## 💡 Getting Started
+
+
+Our benchmark is based on the following main dependencies:
+
+```python
+Python=3.11, VeRL=0.4.0, PyTorch=2.6.0, and vLLM=0.8.5
+```
+
+<!-- You can install other requirements as follows:
+``` bash
+# Install conda (Optional if conda exists)
+bash set_conda.sh
+
+# Install foundational dependencies 
+bash setup_env.sh
+
+# Install dependencies for specific tasks
+conda activate verl
+pip install -r requirements_xxx.txts
+``` -->
+
+## 🌊 Easy Extension
+
+🔹 All of the methods utilized is in `recipe`, you can warp the verl worker for your code to join our codebase. The folder under `recipe` can represent either a method for different tasks or a series methods for one task. You can refer to [Easy Extension](docs/extension.md) for examples.
+
+🔹 All of the environments utilized is in `agent_system`, you can warp the env for your code to join our codebase.
+
+🔹 Add specific dependencies to `requirements_xxx.txt`
+
+🔹 Feel free to add the folder of the third-party tools, e.g., `AgentRL/sandbox` for code implementation.
+
+
+## 🚀 Existing Support
+
+> ### 🧮 **Math+CI**
+
+
+1. We use Sandbox Fusion as an asynchronous code interpreter. You can follow the [Guidance](sandbox/README.md) to run the CI.
+
+2. The training datasets are Math3-5 from SimpleRL and Deepscaler in `datasets`.
+
+```bash
+# 3. Install the requirements
+bash prepare_all_science.sh
+
+# 4. Run the demo code with:
+conda activate agentrl_science
+bash examples/simpletir_trainer/train_grpo.sh
+```
+
+> ### 🎮 **OpenAI Game Agents**
+
+```bash
+# 1. Install the requirements
+bash prepare_all_game.sh
+
+# 2. Run the demo code with:
+bash examples/game_agent_trainer/train_xxx.sh
+```
+
+> ### 🤖 **Embodied Agents**
+```bash
+# 1. Build the environments
+bash prepare_all_embody.sh
+
+# 2. Run the demo code with:
+bash examples/world_agent_trainer/train_xxx.sh
+
+```
+
+> ### 🛒 **Web Agents**
+
+```bash
+# Behavior Cloning, call bedrock api to collect data
+python recipe/webshop/data_sft.py
+
+```
+
+```bash
+# 1. Build the webshop environments
+bash prepare_all_web.sh
+
+# 2. Run the demo code with:
+conda activate agentrl_web.sh
+bash examples/shop_agent_trainer/train_xxxx.sh
+```
+
+> ### 🕸️ **Search Agents**
+
+```bash
+#! 1. Build the RAG server environments
+bash prepare_all_search.sh
+
+
+# 2. Run the demo code with:
+bash examples/search_agent_trainer/train_xxx.sh
+```
+
+## 📊 Further Analysis
+
+
+
+<!-- 
+
+```bash
+# Install requiremnet
+pip install mlflow
+
+# Start server
+mlflow server \
+  --host 0.0.0.0 --port 5000 \
+  --backend-store-uri sqlite:////tmp/mlruns.db \
+  --default-artifact-root /tmp/mlruns
+
+export MLFLOW_TRACKING_URI=http://127.0.0.1:5000
+
+actor_rollout_ref.rollout.trace.backend: mlflow  # or weave
+actor_rollout_ref.rollout.trace.token2text: True
+trainer.logger: ['console', 'mlflow']
+``` -->
+
+## 🎆 Awesome work for reference
+
+- [TinyZero](https://github.com/Jiayi-Pan/TinyZero): a reproduction of **DeepSeek R1 Zero** recipe for reasoning tasks ![GitHub Repo stars](https://img.shields.io/github/stars/Jiayi-Pan/TinyZero)
+- [SkyThought](https://github.com/NovaSky-AI/SkyThought): RL training for Sky-T1-7B by NovaSky AI team. ![GitHub Repo stars](https://img.shields.io/github/stars/NovaSky-AI/SkyThought)
+- [simpleRL-reason](https://github.com/hkust-nlp/simpleRL-reason): SimpleRL-Zoo: Investigating and Taming Zero Reinforcement Learning for Open Base Models in the Wild ![GitHub Repo stars](https://img.shields.io/github/stars/hkust-nlp/simpleRL-reason)
+- [Easy-R1](https://github.com/hiyouga/EasyR1): **Multi-modal** RL training framework ![GitHub Repo stars](https://img.shields.io/github/stars/hiyouga/EasyR1)
+- [OpenManus-RL](https://github.com/OpenManus/OpenManus-RL): LLM Agents RL tunning framework for multiple agent environments. ![GitHub Repo stars](https://img.shields.io/github/stars/OpenManus/OpenManus-RL)
+- [rllm](https://github.com/agentica-project/rllm): async RL training with [verl-pipeline](https://github.com/agentica-project/verl-pipeline) ![GitHub Repo stars](https://img.shields.io/github/stars/agentica-project/rllm)
+- [PRIME](https://github.com/PRIME-RL/PRIME): Process reinforcement through implicit rewards ![GitHub Repo stars](https://img.shields.io/github/stars/PRIME-RL/PRIME)
+- [RAGEN](https://github.com/ZihanWang314/ragen): a general-purpose reasoning **agent** training framework ![GitHub Repo stars](https://img.shields.io/github/stars/ZihanWang314/ragen)
+- [Logic-RL](https://github.com/Unakar/Logic-RL): a reproduction of DeepSeek R1 Zero on 2K Tiny Logic Puzzle Dataset. ![GitHub Repo stars](https://img.shields.io/github/stars/Unakar/Logic-RL)
+- [Search-R1](https://github.com/PeterGriffinJin/Search-R1): RL with reasoning and **searching (tool-call)** interleaved LLMs ![GitHub Repo stars](https://img.shields.io/github/stars/PeterGriffinJin/Search-R1)
+- [DeepRetrieval](https://github.com/pat-jj/DeepRetrieval): RL Training of **Search Agent** with **Search/Retrieval Outcome** ![GitHub Repo stars](https://img.shields.io/github/stars/pat-jj/DeepRetrieval)
+- [ReSearch](https://github.com/Agent-RL/ReSearch): Learning to **Re**ason with **Search** for LLMs via Reinforcement Learning ![GitHub Repo stars](https://img.shields.io/github/stars/Agent-RL/ReSearch)
+- [Code-R1](https://github.com/ganler/code-r1): Reproducing R1 for **Code** with Reliable Rewards ![GitHub Repo stars](https://img.shields.io/github/stars/ganler/code-r1)
+- [Skywork-OR1](https://github.com/SkyworkAI/Skywork-OR1): Skywork open reaonser series ![GitHub Repo stars](https://img.shields.io/github/stars/SkyworkAI/Skywork-OR1)
+- [ToRL](https://github.com/GAIR-NLP/ToRL): Scaling tool-integrated RL ![GitHub Repo stars](https://img.shields.io/github/stars/GAIR-NLP/ToRL)
+- [verl-agent](https://github.com/langfengQ/verl-agent): A scalable training framework for **long-horizon LLM/VLM agents**, along with a new algorithm **GiGPO** ![GitHub Repo stars](https://img.shields.io/github/stars/langfengQ/verl-agent)
+- [PF-PPO](https://arxiv.org/abs/2409.06957): Policy Filtration for PPO based on the reliability of reward signals for more efficient and robust RLHF.
+- [GUI-R1](https://github.com/ritzz-ai/GUI-R1): **GUI-R1**: A Generalist R1-style Vision-Language Action Model For **GUI Agents** ![GitHub Repo stars](https://img.shields.io/github/stars/ritzz-ai/GUI-R1)
+- [DeepResearcher](https://github.com/GAIR-NLP/DeepResearcher): Scaling deep research via reinforcement learning in real-world environments ![GitHub Repo stars](https://img.shields.io/github/stars/GAIR-NLP/DeepResearcher)
+- [VAGEN](https://github.com/RAGEN-AI/VAGEN): Training VLM agents with multi-turn reinforcement learning ![GitHub Repo stars](https://img.shields.io/github/stars/RAGEN-AI/VAGEN)
+- [ReTool](https://retool-rl.github.io/): ReTool: reinforcement learning for strategic tool use in LLMs
+- [Seed-Coder](https://github.com/ByteDance-Seed/Seed-Coder): RL training of Seed-Coder boosts performance on competitive programming ![GitHub Repo stars](https://img.shields.io/github/stars/ByteDance-Seed/Seed-Coder)
+- [all-hands/openhands-lm-32b-v0.1](https://www.all-hands.dev/blog/introducing-openhands-lm-32b----a-strong-open-coding-agent-model): A strong, open coding agent model, trained with [multi-turn fine-tuning](https://github.com/volcengine/verl/pull/195)
+- [RM-R1](https://arxiv.org/abs/2505.02387): RL training of reasoning reward models ![GitHub Repo stars](https://img.shields.io/github/stars/RM-R1-UIUC/RM-R1)
+- [Absolute Zero Reasoner](https://arxiv.org/abs/2505.03335): A no human curated data self-play framework for reasoning![GitHub Repo stars](https://img.shields.io/github/stars/LeapLabTHU/Absolute-Zero-Reasoner)
+- [LUFFY](https://arxiv.org/pdf/2504.14945): Learning to Reason under Off-Policy Guidance![GitHub Repo stars](https://img.shields.io/github/stars/ElliottYan/LUFFY)
+- [verl-tool](https://github.com/TIGER-AI-Lab/verl-tool): An unified and easy-to-extend tool-agent training framework based on verl![GitHub Repo stars](https://img.shields.io/github/stars/TIGER-AI-Lab/verl-tool)
+- [DeepMath](https://github.com/zwhe99/DeepMath): DeepMath-103K data and series models for math reasoning![GitHub Repo stars](https://img.shields.io/github/stars/zwhe99/DeepMath)

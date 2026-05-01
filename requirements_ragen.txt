@@ -1,0 +1,8 @@
+# requirements.txt records the full set of dependencies for development
+gymnasium
+gymnasium[toy-text]
+gym
+gym_sokoban
+matplotlib
+anthropic
+together
