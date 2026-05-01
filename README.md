@@ -199,29 +199,4 @@ trainer.logger: ['console', 'mlflow']
 ```
 </details>
 
----
 
-## 🎆 Awesome Work for Reference
-
-<details open>
-<summary>🌟 <b>Show More (github & paper & hf & post)</b></summary>
-
-<table width="100%" style="max-width: 950px; margin: 0 auto; font-size: 0.98rem;">
-  <tr>
-    <th>Project</th>
-    <th>Description / Paper</th>
-    <th>GitHub</th>
-    <th>HuggingFace</th>
-    <th>Paper/Post</th>
-  </tr>
-
-  <tr>
-    <td><b>TinyZero</b></td>
-    <td>DeepSeek R1 Zero for reasoning tasks</td>
-    <td align="center"><a href="https://github.com/Jiayi-Pan/TinyZero"><img src="https://img.shields.io/github/stars/Jiayi-Pan/TinyZero?style=social" /></a></td>
-    <td align="center"></td>
-    <td align="center"></td>
-  </tr>
-  <!-- ... rest of awesome work remains unchanged ... -->
-</table>
-</details>
