@@ -34,21 +34,6 @@
   
   <div align="center">
 
-<table>
-  <tr>
-    <td width="1" bgcolor="#fe964a"></td>
-    <td width="720" bgcolor="#fff7eb">
-      <br>
-      <b>✨ Core Insights:</b>
-      <br><br>
-      Hesitation is defeat!
-      <br><br>
-      Exploration must be encouraged at every step.
-      <br><br>
-    </td>
-  </tr>
-</table>
-
 </div>
 
 
@@ -66,7 +51,7 @@
 
 ---
 
-**<span style="color:#fd4f57">Problem</span>:** Multi-turn RL for LLM agents is **powerful**, but critically limited by <span style="color:#0C8F8F; font-weight:bold;">poor exploration</span>.
+**<span style="color:#fd4f57">Problem</span>:** Hesitation is defeat! Multi-turn RL for LLM agents is **powerful**, but critically limited by <span style="color:#0C8F8F; font-weight:bold;">poor exploration</span>.
 
 **<span style="color:#116fb8">Key idea</span>:** Training fails mostly when agents repeat low-value actions or ignore task-level uncertainty.
 
