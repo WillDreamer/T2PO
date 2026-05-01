@@ -75,33 +75,23 @@
 
 ---
 
-## 🔥 <span style="color:#fd4f57;">Key Features</span>
+## 🔥 Key Features
 
-<div align="center">
-
-<table width="100%" style="max-width: 740px; border:0; font-size:1.10rem; background:#f7fcfe; margin-bottom:0.6em;">
-  <tr>
-    <td align="center">✅ Embodied Agents (multi-modal RL)</td>
-    <td align="center">✅ Web Agents</td>
-  </tr>
-  <tr>
-    <td align="center">✅ Multi-modal Game Agents</td>
-    <td align="center">✅ Search Agents</td>
-  </tr>
-  <tr>
-    <td colspan="2" align="center" style="color:#116fb8; font-weight:bold;">✅ Commercial and open LLM/VLM agent evaluation supported</td>
-  </tr>
-</table>
-</div>
+- ✅ Support Training Multi-turn Embody Agents
+- ✅ Support Training Multi-turn Search Agents
+- ✅ Support Training Multi-turn Multi-modal Game Agents
+- ✅ Support Training Multi-turn Web Agents
+- ✅ Support Evaluating Commerical LLMs as Agents
 
 ---
 
 ## 💡 Getting Started
 
-<div align="center" style="font-size:1.08rem; padding:7px 0 3px 0;">
-<b>Core Dependencies:</b><br>
-<code>Python=3.11, VeRL=0.4.0, PyTorch=2.6.0, vLLM=0.8.5</code>
-</div>
+Our work is based on the following main dependencies:
+
+```python
+Python=3.11, VeRL=0.4.0, PyTorch=2.6.0, and vLLM=0.8.5
+```
 
 <details>
 <summary>👉 <b>Click to expand installation guide</b> <em>(optional)</em></summary>
