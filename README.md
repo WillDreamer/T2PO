@@ -12,15 +12,12 @@
     <a href="https://github.com/WillDreamer/T2PO" align="center">
       <img src="https://img.shields.io/github/stars/WillDreamer/T2PO?style=social" alt="GitHub stars" />
     </a>
-    &nbsp;
     <a href="https://huggingface.co/collections/willhx/t2po">
       <img src="https://img.shields.io/badge/HuggingFace-🤗-yellow" alt="Huggingface" />
     </a>
-    &nbsp;
     <a href="https://arxiv.org/abs/24xx.xxxxx">
       <img src="https://img.shields.io/badge/Paper-arXiv-red" alt="arXiv Paper" />
     </a>
-    &nbsp;
     <a href="https://your-blog-post.com">
       <img src="https://img.shields.io/badge/Blog-Post-green" alt="Blog/Project Post" />
     </a>
