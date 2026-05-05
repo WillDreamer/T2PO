@@ -18,7 +18,7 @@
     <a href="http://arxiv.org/abs/2605.02178">
       <img src="https://img.shields.io/badge/Paper-arXiv-red" alt="arXiv Paper" />
     </a>
-    <a href="https://your-blog-post.com">
+    <a href="https://zhuanlan.zhihu.com/p/2034956125624381457">
       <img src="https://img.shields.io/badge/Blog-Post-green" alt="Blog/Project Post" />
     </a>
   </div>
