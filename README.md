@@ -15,7 +15,7 @@
     <a href="https://huggingface.co/collections/willhx/t2po">
       <img src="https://img.shields.io/badge/HuggingFace-🤗-yellow" alt="Huggingface" />
     </a>
-    <a href="https://arxiv.org/abs/24xx.xxxxx">
+    <a href="http://arxiv.org/abs/2605.02178">
       <img src="https://img.shields.io/badge/Paper-arXiv-red" alt="arXiv Paper" />
     </a>
     <a href="https://your-blog-post.com">
