@@ -1,0 +1,13 @@
+# recipe/shop_agent/config/model_api.yaml
+model_config:
+  model_name: gpt-4o-mini         # ✅ 当前要跑的模型
+  max_concurrency: 20             # 可同时发起的请求数
+
+model_info:
+  gpt-4o-mini:
+    provider_name: openai         # ✅ 指明是 OpenAI provider
+    model_name: gpt-4o-mini
+    generation_kwargs:
+      temperature: 0.7
+      max_tokens: 512
+      top_p: 0.9
