@@ -203,7 +203,7 @@ trainer.logger: ['console', 'mlflow']
 ## ✍️ Citation
 ```bibtex
 @article{wang2026t,
-  title={T $\^{} 2$ PO: Uncertainty-Guided Exploration Control for Stable Multi-Turn Agentic Reinforcement Learning},
+  title={T $^2$ PO: Uncertainty-Guided Exploration Control for Stable Multi-Turn Agentic Reinforcement Learning},
   author={Wang, Haixin and Cui, Hejie and Zhang, Chenwei and Liu, Xin and Jin, Shuowei and Geng, Shijie and Zhang, Xinyang and Zalmout, Nasser and Shi, Zhenyu and Sun, Yizhou},
   journal={arXiv preprint arXiv:2605.02178},
   year={2026}
